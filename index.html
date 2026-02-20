@@ -11,6 +11,129 @@
     </head>
 
     <body>
-        
+
+        <div id="cursor-dot"></div>
+        <div id="cursor-ring"></div>
+
+        <canvas id="bg-canvas"></canvas>
+
+        <nav>
+            <a href="#home" class="nav-logo" onclick="navigateTo('home')">
+                Y.N
+            </a>
+
+            <div class="nav-right">
+                <a class="nav-link" href="#projects" onclick="navigateTo('projects')" data-fr="Projets" data-en="Projects">Projets</a>
+                <a class="nav-link" href="mailto:younes.mohamed.ziane@gmail.com" data-fr="Contact" data-en="Contact">Contact</a>
+
+                <button class="theme-toggle" onclick="toggleTheme()" title="Changer de thème" aria-label="Toggle theme">
+                    <div class="theme-toggle-thumb">🌙</div>
+                </button>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+                    <button class="lang-btn" onclick="setLang('en')">EN</button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="app">
+
+            <div class="page active page-content" id="page-home">
+
+                <section class="hero">
+                    <div class="hero-tag" data-fr="Portfolio - Disponible pour une alternance" data-en="Portfolio - Available for apprenticeship">
+                        Portfolio - Disponible pour une alternance
+                    </div>
+                    <h1 class="hero-name"> 
+                        <span>Younès</span>
+                        <span style="font-style:italic; font-weight:300;">Ziane</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        <span data-fr="Étudiant en bachelor développement web à <strong>l'HETIC</strong>, passionné par la photographie, le motosport et le cinéma, je sui à la recherche d'une <strong> alternance </strong> en développement Front-end, Back-end ou Full-stack."
+                            data-en="Web development student at <strong>HETIC</strong>, passionnate about cinema, motosport and photography, i'm looking for an <strong>apprenticeship</strong> in Front-end, Back-end for Full-stack development.">Étudiant en bachelor développement web à <strong>l'HETIC</strong>, passionné par la photographie, le motosport et le cinéma, je sui à la recherche d'une <strong> alternance </strong> en développement Front-end, Back-end ou Full-stack.
+                        </span>
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn-primary" href="./cv.pdf" download>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                            </svg>
+                            <span data-fr="Télécharger mon CV" data-en="Download my resume">Télécharger mon CV</span>
+                        </a>
+
+                        <a class="btn-secondary" href="mailto:younes.mohamed.ziane@gmail.com">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                              </svg>
+                              <span data-fr="Me contacter" data-en="Contact me">Me contacter</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+
+                        <a class="social-link" href="https://www.linkedin.com/in/younes-ziane-585224251/" target="_blank" title="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                              </svg>
+                        </a>
+
+                        <a class="social-link" href="https://github.com/attori1" target="_blank" title="GitHub">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                              </svg>
+                        </a>
+                    </div>
+
+                    <div class="hero-line">
+                        <div class="hero-line-bar"></div>
+                        <span class="hero-scroll-text" data-fr="Défilez" data-en="Scroll">Défilez</span>
+                        <div class="hero-line-bar"></div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <section>
+                    <div class="about-grid">
+                        <div>
+                            <div class="section-label" data-fr="À propos de moi" data-en="About me">À propos de moi</div>
+                            <h2 class="section-title reveal" data-fr="Qui suis-je ?" data-en="Who am I?">Qui suis-je ?</h2>
+                            <blockquote class="about-highlight reveal reveal-delay-1">
+                                <span class="todo"> À MODIFIER BLA BLA PTITE PHRASE DACCROCHE</span>
+                            </blockquote>
+                            
+                            <div class="about-text reveal reveal-delay-2">
+                                <p>
+                                    <span class="todo"> ECRIRE UNE BIO BLA BLA BLA</span>
+                                </p>
+                            </div>
+
+                            <div class="about-badges reveal reveal-delay-3">
+                                <span class="badge accent" data-fr="Étudiant HETIC" data-en="HETIC Student">Étudiant HETIC</span>
+                                <span class="badge" data-fr="Développeur Web" data-en="Web Developer">Développeur Web</span>
+                                <span class="badge">Front-end</span>
+                                <span class="badge">Back-end</span>
+                                <span class="badge">Full-stack</span>
+                            </div>
+                        </div>
+                        <div class="reveal reveal-delay-2" style="display:flex; align-items:center; justify-content:center;">
+                            <div style="width:280px; height:340px; border-radius:16px; background:var(--bg-card); border:1px solid var(--border-soft); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.8rem; position:relative; overflow:hidden;">
+                                <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(192,18,42,.12), rgba(173,20,87,.12)); pointer-events:none;"></div>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="rgba(128,128,128,.2)" stroke-width="1" width="64" height="64">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                  </svg>
+                                  <span class="todo" style="font-size:.65rem; text-align:center; padding:0 1rem;">⚠️ Ta photo ici</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
