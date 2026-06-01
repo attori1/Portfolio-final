@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 
-import WindowBar from './components/WindowBar';
-import Sidebar from './components/Sidebar';
-import StatusBar from './components/StatusBar';
+import WindowBar from './components/windowbar.jsx';
+import Sidebar from './components/sidebar.jsx';
+import StatusBar from './components/statusbar.jsx';
 
 import Readme from './pages/readme.jsx';
 import About from './pages/about.jsx';
