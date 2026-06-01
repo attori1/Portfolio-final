@@ -43,7 +43,7 @@ export const NOW = {
             ],
         },
         {
-            titre: "le reste",
+            titre: "divers",
             items: [
                 "j'écoute beaucoup Beyoncé en codant",
                 "j'ai repris [à remplir plus tard",
@@ -60,8 +60,8 @@ export const PROJETS = [
         description: "Petit jeu de course assez simple en html, css et javascript" +
                      "Premier projet que j'ai pu faire seul de mon coté",
         technos: ["Javascript, HTML, CSS"],
-        demo: "mettre le lien",
-        code: "mettre le lien",
+        demo: "https://runner-v1-chi.vercel.app",
+        code: "https://github.com/attori1/Runner-v1",
     },
     {
         num: "02",
@@ -84,7 +84,7 @@ export const PROJETS = [
 ];
 
 export const COMPETENCES = {
-    acquis: ["HTML", "CSS", "Javascript", "Python", "Figma", "SQL"],
+    acquis: ["HTML", "CSS", "Javascript", "Python", "Figma", "SQL", "Outils de génération IA (Claude, Gemini, Manus, Clicky, etc)"],
     en_cours: ["React", "Node.js", "et bien d'autres à venir !"],
 };
 
