@@ -14,7 +14,10 @@ export const META = {
 };
 
 
-export const README_INTRO = "Salut ! Je m'appelle ${MOI.nom} et je suis un ${MOI.role.toLowerCase()} basé en ${MOI.ville}. Bienvenu dans mon portfolio qui me sert de vitrine pour exposer mes compétences et mes projets passés. N'hesitez pas à me contacter si vous êtes interessés !";;
+export const README_INTRO = `Salut ! Je m'appelle ${MOI.nom} et je suis un ${MOI.role.toLowerCase()} basé en ${MOI.ville}. 
+                            
+                            Bienvenu dans mon portfolio qui me sert de vitrine pour exposer mes compétences et mes projets passés. 
+                            N'hesitez pas à me contacter si vous êtes interessés !`;;
 
 export const ABOUT_PARAS = [
     "// Actuellement étudiant en deuxieme année à l'HETIC en bachelor de développement web, je suis passionné par l'informatique et le développement de projets innovants.",
