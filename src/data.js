@@ -46,7 +46,6 @@ export const NOW = {
             titre: "divers",
             items: [
                 "j'écoute beaucoup Beyoncé en codant",
-                "j'ai repris [à remplir plus tard",
             ],
         },
     ],
