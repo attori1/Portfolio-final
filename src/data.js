@@ -39,7 +39,7 @@ export const NOW = {
         {
             titre: "lecture",
             items: [
-                "en cours: Invincible de Robert Kirkman",
+                "en cours: Invincible de Robert Kirkman, Berserk de Kentaro Miura",
                 "récemment terminé : Mécanique du privilège blanc d'Estelle Depris",
             ],
         },
@@ -47,6 +47,7 @@ export const NOW = {
             titre: "divers",
             items: [
                 "j'écoute beaucoup Beyoncé en codant",
+                "je redécouvre une licence de jeux videos qui a marqué mon enfance : God Of War",
             ],
         },
     ],
@@ -67,10 +68,10 @@ export const PROJETS = [
         num: "02",
         titre: "Projet 2",
         annee: "2026",
-        description: "à venir",
-        technos: [],
+        description: "Jeu en Three.js",
+        technos: ["Three.js", "Javascript", "HTML", "CSS"],
         demo: "mettre le lien",
-        code: "mettre le lien",
+        code: "https://github.com/attori1/three-js",
     },
     {
         num: "03",
