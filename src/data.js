@@ -14,25 +14,26 @@ export const META = {
 };
 
 
-export const README_INTRO = `Salut ! Je m'appelle ${MOI.nom} et je suis un ${MOI.role.toLowerCase()} basé en ${MOI.ville}. 
+export const README_INTRO = `Salut ! Je m'appelle ${MOI.nom} et je suis ${MOI.role.toLowerCase()} basé en ${MOI.ville}. 
                             
                             Bienvenu dans mon portfolio qui me sert de vitrine pour exposer mes compétences et mes projets passés. 
                             N'hesitez pas à me contacter si vous êtes interessés !`;;
 
 export const ABOUT_PARAS = [
-    "// Actuellement étudiant en deuxieme année à l'HETIC en bachelor de développement web, je suis passionné par l'informatique et le développement de projets innovants.",
-    "// Ma scolarité a toujours été tourné autour de l'informatique, apres une classe prepa MPI j'ai intégré l'EFREI Paris pour ensuite me réorienter vers l'HETIC",
-    "// Actuellement je suis à la recherche d'une alternance pour ma deuxième année de bachelor, n'hésitez pas à me contacter !",
+    "// Actuellement étudiant en deuxieme année à l'HETIC en Bachelor de développement web, je suis passionné par l'informatique et le développement de projets innovants.",
+    "// Ma scolarité a toujours tourné autour de l'informatique, apres une classe preparatoire aux grandes écoles MPI j'ai intégré l'EFREI Paris pour ensuite me réorienter vers l'HETIC",
+    "// Actuellement je suis à la recherche d'une alternance en développement web pour ma deuxième année de bachelor, n'hésitez pas à me contacter !",
 ];
 
 export const NOW = {
-    derniereMaj: "2026-06-15",
+    derniereMaj: "2026-06-19",
     sections: [
         {
             titre: "code",
             items: [
                 "j'apprends React via différents projets (notamment ce portfolio)",
-                "prochain projet : ReadList de comics",
+                "Projet actuel : ReadList de comics",
+                "Prochain projet : Dashboard live d'un Grand Prix de Formule 1",
             ],
         },
         {
