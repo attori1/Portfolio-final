@@ -4,7 +4,7 @@ function tempsEcoule(dateISO) {
   const debut = new Date(dateISO);
   const maintenant = new Date();
  
-  // différence en jours (1000 ms * 60 s * 60 min * 24 h = 1 jour)
+
   const jours = Math.floor((maintenant - debut) / (1000 * 60 * 60 * 24));
  
   if (jours <= 0) return "aujourd'hui";
@@ -22,7 +22,7 @@ export default function Now(){
         <article className="md">
             <h1># now</h1>
             <blockquote>
-                ce que je fais actuellement - mis à jours {NOW.miseAJour}
+                ce que je fais actuellement - mis à jours {tempsEcoule(NOW.derniereMaj)}
             </blockquote>
 
             {NOW.sections.map((s,i)=>(
