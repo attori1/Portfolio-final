@@ -26,7 +26,7 @@ export const ABOUT_PARAS = [
 ];
 
 export const NOW = {
-    miseAJour: "il y a 3 jours",
+    derniereMaj: "2026-06-15",
     sections: [
         {
             titre: "code",
