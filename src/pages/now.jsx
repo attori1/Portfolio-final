@@ -1,5 +1,22 @@
 import {NOW} from "../data";
 
+function tempsEcoule(dateISO) {
+  const debut = new Date(dateISO);
+  const maintenant = new Date();
+ 
+  // différence en jours (1000 ms * 60 s * 60 min * 24 h = 1 jour)
+  const jours = Math.floor((maintenant - debut) / (1000 * 60 * 60 * 24));
+ 
+  if (jours <= 0) return "aujourd'hui";
+  if (jours === 1) return 'hier';
+  if (jours < 7) return `il y a ${jours} jours`;
+  if (jours < 14) return 'il y a une semaine';
+  if (jours < 30) return `il y a ${Math.floor(jours / 7)} semaines`;
+  if (jours < 60) return 'il y a un mois';
+  return `il y a ${Math.floor(jours / 30)} mois`;
+}
+
+
 export default function Now(){
     return(
         <article className="md">

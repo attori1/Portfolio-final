@@ -9,7 +9,7 @@ export const MOI = {
 };
 
 export const META = {
-    derniereMaj: "il y a 3 jours",
+    derniereMaj: "2026-06-15",
     version: "v1.0.3",
 };
 
