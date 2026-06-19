@@ -5,7 +5,7 @@ export const MOI = {
     ville: "Île-de-France",
     email: "younes.mohamed.ziane@gmail.com",
     github: "https://github/com/attori1",
-    cv: "public/CV.pdf",
+    cv: "public/CV-ENLIGNE.pdf",
 };
 
 export const META = {
